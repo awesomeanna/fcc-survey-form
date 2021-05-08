@@ -16,26 +16,27 @@
                 <h1 id="title">AMT Bank Customer Service Survey Form</h1>
             </div>
             <div>
-                <p id="description" style="text-align: center;">Thankyou for taking the time to help us better our services</p>
+                <p id="description" style="text-align: center;">Thankyou for taking the time to help us better our services
+                </p>
             </div>
             <div>
         </header>
         <form action="#" id="survey-form">
             <div class="form-group">
-                <label id="name" for="name">Name</label>
+                <label id="name-label" for="name">Name</label>
                 <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
             </div>
             <div class="form-group">
-                <label for="email" id="email">Email</label>
+                <label for="email-label" id="email">Email</label>
                 <input type="email" name="email" id="email" class="form-control" placeholder="Enter your email" required>
             </div>
             <div class="form-group">
-                <label for="number" id="number">Age (optional) </label>
+                <label for="number-label" id="number">Age (optional) </label>
                 <input type="number" name="age" id="number" class="form-control" min="15" max="99" placeholder="Age">
             </div>
             <div class="form-group">
                 <p>Which type of service do we offer to you?</p>
-                <select name="service" id="service-list">
+                <select name="service" id="dropdown">
                     <option value="" selected="" disabled>Select an option</option>
                     <option value="individual-banking">Individual banking</option>
                     <option value="digital-banking">Digital banking</option>
@@ -70,24 +71,28 @@
             <div class="form-group">
                 <p>In what area would you like to see improvements?</p>
                 <label for="">
-                    <input type="checkbox" name="improvement" class="input-checkbox">Customer Service
+                    <input type="checkbox" name="improvement" class="input-checkbox" value="customer-service">Customer
+                    Service
                 </label>
                 <label for="">
-                    <input type="checkbox" name="improvement" class="input-checkbox">Online bank portal
+                    <input type="checkbox" name="improvement" class="input-checkbox" value="online-bank-portal">Online
+                    bank portal
                 </label>
                 <label for="">
-                    <input type="checkbox" name="improvement" class="input-checkbox">ATM outlets
+                    <input type="checkbox" name="improvement" class="input-checkbox" value="atm-outlets">ATM outlets
                 </label>
                 <label for="">
-                    <input type="checkbox" name="improvement" class="input-checkbox">Loan processing
+                    <input type="checkbox" name="improvement" class="input-checkbox" value="loan-processing">Loan
+                    processing
                 </label>
                 <label for="">
-                    <input type="checkbox" name="improvement" class="input-checkbox">Investment Banking
+                    <input type="checkbox" name="improvement" class="input-checkbox"
+                        value="investment-banking">Investment Banking
                 </label>
             </div>
             <div class="form-group">
                 <p>Any comments or suggestions?</p>
-                <textarea name="any-comments" id="any-comment" cols="50" rows="-5"></textarea>
+                <textarea name="any-comments" id="any-comment" cols="50" rows="-5" placeholder="Enter your comment here..."></textarea>
             </div>
             <div class="form-group">
                 <button id="submit" class="submit-button">Submit</button>
